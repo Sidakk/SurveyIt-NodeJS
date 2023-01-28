@@ -1,0 +1,38 @@
+<div id="topBar">
+    <div class="topBar">
+        <div>
+            <button id="toggle-btn"><i class="bi bi-list"></i></button>
+        </div>
+        <div class="profileTop">
+            <div style="margin-right:10px ;" class="profileTopPhoto">
+                <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=600"
+                    alt="profilePic">
+            </div>
+            <div class="text-muted">
+                <a href="/">
+                    <div style="right:10px ;" class="dropdown">
+                        <span class="profile-navbar">
+                            <%= firstName%>
+                                <%= lastName%>
+                        </span>
+                        <div class="dropdown-content">
+                            <div class="dropdown-container">
+                                <ul class="dropdown-list">
+                                    <li><a href="/profile">My Profile</a></li>
+                                    <li><a href="/surveys">Surveys</a></li>
+                                    <li><a href="/responses">Responses</a></li>
+                                    <li><a href="/newSurvey">New Survey</a></li>
+                                    <li>
+                                        <form action="/logout" method="POST"><button class="logout-button"
+                                                type="submit">Logout</button>
+                                        </form>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
